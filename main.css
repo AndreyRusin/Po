@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,700,900");
+@import url("https://fonts.googleapis.com/css?family=Audiowide");
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+.section-padding {
+  padding: 100px 0;
+}
+.section-header {
+  padding-bottom: 30px;
+}
+.navbar-brand {
+  color: white !important;
+}
+.fa-bars {
+  color: white;
+}
+.nav-area {
+  background-color: #262626;
+}
+.navbar-nav,
+.nav-link {
+  padding-right: 0;
+  padding-left: 0;
+  color: white !important;
+  font-weight: bold;
+}
+.nav-item {
+  color: white;
+  padding: 0 10px;
+  text-transform: uppercase;
+}
+.slider-area {
+  background-image: url(img/bg.jpg);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  color: white;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slider-area:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(360deg, #000, transparent);
+}
+.slider-text h1 {
+  font-size: 45px;
+  font-weight: bold;
+}
+.slider-text a {
+  padding: 10px 15px;
+  background-color: #2988b9;
+  color: #fff;
+  display: inline-block;
+  margin-top: 25px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+}
+.slider-text {
+  text-align: center;
+}
+.slider-text h1,
+.slider-text h4,
+.slider-text p {
+  text-shadow: 1px 1px 7px #000;
+}
+.slider-text a:hover {
+  background-color: #fff;
+  color: blue;
+  text-decoration: none;
+  text-shadow: none;
+}
+
+/*-----------ABOUT AREA
+*/
+.about-img img {
+  width: 100%;
+}
+.item-text {
+  padding-left: 15px;
+}
+.about-img {
+  padding-right: 15%;
+}
+.item-text h4 {
+  margin-bottom: 30px;
+}
+/*-----------STATS AREA
+*/
