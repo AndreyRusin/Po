@@ -1,0 +1,22 @@
+{
+  "name": "portfolio_loo",
+  "version": "1.0.0",
+  "description": "Portfolio of a web designer",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndreyRusin/Po.git"
+  },
+  "author": "Sam Nikogosian",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AndreyRusin/Po/issues"
+  },
+  "homepage": "https://github.com/AndreyRusin/Po#readme",
+  "dependencies": {
+    "gh-pages": "^2.0.1"
+  }
+}
