@@ -1,10 +1,10 @@
 {
-  "name": "portfolio_loo",
+  "name": "portfolio",
   "version": "1.0.0",
-  "description": "Portfolio of a web designer",
+  "description": "Portfolio Samvel Nikogosian",
   "main": "index.js",
   "scripts": {
-    "deploy": "gh-pages -d ."
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
