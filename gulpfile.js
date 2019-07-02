@@ -1,21 +1,35 @@
 const { src, dest, series, parallel } = require("gulp");
-const sass = require("gulp-sass");
-const cssnano = require("gulp-cssnano");
-const htmlmin = require("gulp-htmlmin");
+const $ = require("gulp-load-plugins")();
 
 function html() {
   return src("./src/*.html")
-    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe($.htmlmin({ collapseWhitespace: true }))
     .pipe(dest("./dist/"));
+}
+
+function images() {
+  return src("./src/img/*")
+    .pipe($.imagemin())
+    .pipe(dest("./dist/images"));
+}
+
+function transpile() {
+  return src("./src/**/*.js")
+    .pipe($.plumber())
+    .pipe($.sourcemaps.init())
+    .pipe($.babel())
+    .pipe($.sourcemaps.write())
+    .pipe($.concat("main.js"))
+    .pipe(dest("./dist"));
 }
 
 function sass_f() {
   return src("./src/*.scss")
-    .pipe(sass())
-    .pipe(cssnano())
+    .pipe($.plumber())
+    .pipe($.sass())
+    .pipe($.autoprefixer())
+    .pipe($.cssnano())
     .pipe(dest("./dist/"));
 }
 
-exports.default = parallel(html, sass_f);
-
-//I remember that gulp is based on streams and doesn't supports syncronous tasks
+exports.default = series(html, sass_f, images, transpile);
