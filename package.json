@@ -18,5 +18,8 @@
   "homepage": "https://github.com/AndreyRusin/Po#readme",
   "dependencies": {
     "gh-pages": "^2.0.1"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2"
   }
 }
