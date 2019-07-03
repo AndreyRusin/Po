@@ -4,6 +4,7 @@
   "description": "Portfolio Samvel Nikogosian",
   "main": "index.js",
   "scripts": {
+    "start": "gulp",
     "deploy": "gh-pages -d ."
   },
   "repository": {

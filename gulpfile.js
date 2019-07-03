@@ -1,4 +1,4 @@
-const { src, dest, series, parallel } = require("gulp");
+const { src, dest, series } = require("gulp");
 const $ = require("gulp-load-plugins")();
 
 function html() {
