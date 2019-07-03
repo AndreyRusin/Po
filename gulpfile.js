@@ -10,7 +10,7 @@ function html() {
 function images() {
   return src("./src/img/*")
     .pipe($.imagemin())
-    .pipe(dest("./dist/images"));
+    .pipe(dest("./dist/img"));
 }
 
 function transpile() {
