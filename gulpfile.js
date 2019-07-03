@@ -22,7 +22,9 @@ function transpile() {
     .pipe($.concat("main.js"))
     .pipe(dest("./dist"));
 }
-
+function libs() {
+  return src("./src/libs/..").pipe(dest("./dist/"));
+}
 function sass_f() {
   return src("./src/*.scss")
     .pipe($.plumber())
@@ -32,4 +34,4 @@ function sass_f() {
     .pipe(dest("./dist/"));
 }
 
-exports.default = series(html, sass_f, images, transpile);
+exports.default = series(html, sass_f, images, transpile, libs);
