@@ -16,14 +16,13 @@
   "bugs": {
     "url": "https://github.com/AndreyRusin/Po/issues"
   },
-  "homepage": "https://github.com/AndreyRusin/Po#readme",
-  "dependencies": {
-    "gh-pages": "^2.0.1"
-  },
+  "homepage": "https://andreyrusin.github.io/Po/",
+  "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.4.5",
     "@babel/preset-env": "^7.4.5",
     "browser-sync": "^2.26.7",
+    "gh-pages": "^2.0.1",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^6.1.0",
     "gulp-babel": "^8.0.0",
