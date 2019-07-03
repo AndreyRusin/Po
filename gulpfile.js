@@ -23,7 +23,7 @@ function transpile() {
     .pipe(dest("./dist"));
 }
 function libs() {
-  return src("./src/libs/..").pipe(dest("./dist/"));
+  return src("./src/**/*.js").pipe(dest("./dist/"));
 }
 function sass_f() {
   return src("./src/*.scss")
